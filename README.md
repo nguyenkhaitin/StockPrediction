@@ -1,7 +1,5 @@
 **📈Ứng Dụng Phân Tích Thống Kê trong Dự Báo Giá Chứng Khoán - Nhóm 11**
 
-Giới thiệu
-
 Dự án này được phát triển bởi Nhóm 11 trong khuôn khổ môn "Phân Tích Dữ Liệu Cho Quản Lý" tại Trường Đại học Khoa học Xã hội và Nhân văn, ĐHQG TP.HCM.
 
 Ứng dụng sử dụng các phương pháp phân tích thống kê để dự báo xu hướng giá chứng khoán, giúp nhà đầu tư đưa ra quyết định chính xác hơn. Các mô hình dự báo bao gồm:
@@ -70,8 +68,6 @@ Nhập mã chứng khoán, chọn mô hình dự báo và xem kết quả trực
 Mọi đóng góp từ cộng đồng đều được hoan nghênh. Hãy tạo một issue hoặc pull request nếu bạn có ý tưởng cải thiện dự án.
 
 Liên hệ
-
-Nhóm 11 - Trường ĐH KHXH&NV, ĐHQG TP.HCM
 
 Giảng viên hướng dẫn: ThS. Trần Đình Anh Huy
 
