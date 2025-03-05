@@ -1,4 +1,4 @@
-**Ứng Dụng Phân Tích Thống Kê Trong Dự Báo Giá Chứng Khoán**
+**📈Ứng Dụng Phân Tích Thống Kê trong Dự Báo Giá Chứng Khoán - Nhóm 11**
 
 Giới thiệu
 
