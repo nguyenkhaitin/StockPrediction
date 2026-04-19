@@ -1,75 +1,65 @@
-**📈Ứng Dụng Phân Tích Thống Kê trong Dự Báo Giá Chứng Khoán - Nhóm 11**
+# Stock Price Prediction & Statistical Analysis
 
-Dự án này được phát triển bởi Nhóm 11 trong khuôn khổ môn "Phân Tích Dữ Liệu Cho Quản Lý" tại Trường Đại học Khoa học Xã hội và Nhân văn, ĐHQG TP.HCM.
+[Streamlit App Demo](https://stockprediction-nktin.streamlit.app)
 
-Ứng dụng sử dụng các phương pháp phân tích thống kê để dự báo xu hướng giá chứng khoán, giúp nhà đầu tư đưa ra quyết định chính xác hơn. Các mô hình dự báo bao gồm:
+<img width="1920" height="910" alt="image" src="https://github.com/user-attachments/assets/7e983e3e-9ab2-4a82-9571-056b2fe5fb27" />
 
-Moving Average (MA)
 
-Weighted Moving Average (WMA)
+> *An interactive web application for stock price forecasting using time-series statistical models.*
 
-Exponential Smoothing (ES)
+This project was developed by **Team 11** for the **Data Analysis for Management** course at the **University of Social Sciences and Humanities (USSH)**. It leverages statistical methods and machine learning concepts to analyze historical stock data and predict future price trends, aiding investors in making data-driven decisions.
 
-Holt (Double Exponential Smoothing)
+---
 
-Holt-Winters
+### My Role: Data Analyst & Product Lead
+In this project, I managed the end-to-end data product lifecycle, focusing on transforming raw stock data into actionable investment insights:
 
-Dữ liệu sử dụng trong dự án được lấy từ Yahoo Finance và tập trung vào các công ty thuộc ba lĩnh vực:
+* **ETL & Data Cleaning:** Orchestrated the data pipeline by extracting raw CSV files and using **Power Query** to clean, transform, and handle anomalies (Z-Score analysis).
+* **Statistical Logic & Analysis:** Formulated key business questions to extract meaningful outputs (Returns, Volatility, Correlation). I built a **Dynamic Excel Dashboard** to compare Fashion sector tickers (NKE, ADDYY, VFC) with interactive filters.
+* **Tech Transformation:** Translated static Excel models and charts into a scalable **Python** environment, leveraging **Streamlit** to build a real-time web interface.
+* **Forecasting Implementation:** Directly implemented time-series algorithms (Holt-Winters, MA, etc.) into the web app, allowing users to run predictive models on pre-loaded datasets.
 
-Thời trang: NIKE (NKE), ADIDAS (ADDYY), VF Corporation (VFC)
 
-Kỹ thuật: TESLA (TSLA)
+---
 
-Công nghệ: NOKIA (NOK)
+### Key Objectives
+* **Predictive Modeling:** Develop and evaluate accurate forecasting models using statistical time-series analysis.
+* **Sector Analysis:** Compare model performance across diverse industries with varying volatilities.
+* **Interactive Visualization:** Build a user-friendly, real-time dashboard for investors.
 
-Mục tiêu nghiên cứu
+---
 
-Phát triển mô hình dự báo chính xác dựa trên phân tích thống kê.
+### Dataset & Scope
+Data is extracted from **Yahoo Finance**, focusing on historical adjusted closing prices, trading volumes, and return metrics for 5 major corporations across 3 distinct sectors:
+* **Fashion:** NIKE (NKE), ADIDAS (ADDYY), VF Corporation (VFC)
+* **Engineering / Automotive:** TESLA (TSLA)
+* **Technology:** NOKIA (NOK)
 
-Đánh giá hiệu quả của các mô hình dự báo trên các ngành có đặc điểm khác nhau.
+---
 
-Xây dựng một nền tảng trực quan giúp nhà đầu tư dễ dàng sử dụng.
+### Two-Pillar Analytical Approach
+This project is strategically divided into two core phases: diagnosing historical data and forecasting future trends.
 
-Công nghệ sử dụng
+#### Phase 1: Data Analysis & Business Intelligence
+Before applying predictive algorithms, I established a foundation of statistical logic to understand market behaviors and volatility:
+* **Exploratory Data Analysis (EDA):** Conducted Hypothesis testing (Run test) for randomness, Z-Score for anomaly detection, and return volatility tracking.
+* **Interactive Dashboarding:** Built a dynamic Business Intelligence Dashboard to cross-compare the Fashion sector (NIKE, ADIDAS, VFC) using custom timeframes and statistical filters.
 
-Ngôn ngữ lập trình: Python
+<img width="1745" height="667" alt="image" src="https://github.com/user-attachments/assets/3c5d826c-61e3-445b-9685-2de4d9df1e5d" />
 
-Thư viện: Pandas, NumPy, Matplotlib, Seaborn, Statsmodels, SciPy, Streamlit
+#### Phase 2: Time-Series Forecasting Models
+Leveraging the cleaned data pipelines, I implemented advanced statistical algorithms in Python to predict future stock price movements:
+* **Baseline Models:** Moving Average (MA) & Weighted Moving Average (WMA).
+* **Advanced Smoothing:** Exponential Smoothing (ES).
+* **Trend & Seasonality:** Holt’s Linear Trend Model (Double ES) and Holt-Winters Model (Triple ES) to capture complex market cycles.
 
-Công cụ hỗ trợ: Power Query, Microsoft Excel
+<img width="1920" height="919" alt="image" src="https://github.com/user-attachments/assets/925b0ae7-0b30-4cdf-8186-1be06272cca5" />
 
-Cấu trúc dự án
+---
 
-├── data/                # Dữ liệu đầu vào
-├── models/              # Các mô hình dự báo
-├── notebooks/           # Notebook phân tích và thử nghiệm
-├── src/                 # Mã nguồn chính
-│   ├── data_processing.py   # Tiền xử lý dữ liệu
-│   ├── forecasting.py       # Các mô hình dự báo
-│   ├── visualization.py     # Trực quan hóa dữ liệu
-│   └── app.py               # Ứng dụng chính chạy trên Streamlit
-├── README.md            # Tài liệu dự án
-└── requirements.txt      # Danh sách thư viện cần cài đặt
-
-Cách sử dụng
-
-Cài đặt thư viện cần thiết:
-
-pip install -r requirements.txt
-
-Chạy ứng dụng:
-
-streamlit run src/app.py
-
-Nhập mã chứng khoán, chọn mô hình dự báo và xem kết quả trực quan.
-
-Đóng góp
-
-Mọi đóng góp từ cộng đồng đều được hoan nghênh. Hãy tạo một issue hoặc pull request nếu bạn có ý tưởng cải thiện dự án.
-
-Liên hệ
-
-Giảng viên hướng dẫn: ThS. Trần Đình Anh Huy
-
-📌 Demo ứng dụng: Stock Prediction App
-📌 GitHub Repository: Stock Prediction GitHub
+### Technical Stack
+* **Language:** Python
+* **Data Processing & Math:** Pandas, NumPy, SciPy, Statsmodels
+* **Data Visualization:** Microsoft Excel, Matplotlib, Seaborn
+* **Web Framework:** Streamlit
+* **ETL Tools:** Power Query, Microsoft Excel
